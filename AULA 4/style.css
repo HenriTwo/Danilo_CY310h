@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px;
+    flex-direction: column;
+    background-color: rgb(156, 63, 243);
+}
+
+table{
+    background-color: rgba(94, 35, 231, 0.842);
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px rgb(36, 36, 36);
+}
+
+input{
+    border: none;
+    border-radius: 10%;
+    background-color: blueviolet;
+}
