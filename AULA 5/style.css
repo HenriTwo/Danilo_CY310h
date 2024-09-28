@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgb(165, 77, 247);
+}
+    
+.container {
+    background-color: violet;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+table th {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+table tr.cabecalho {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+table tr.infos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    font-size: 26px ;
+    background-color: rgb(233, 115, 233);
+    border-radius: 5px;
+}
+
+table tr td {
+    padding: 10px;
+}
+    
