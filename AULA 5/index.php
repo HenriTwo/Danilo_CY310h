@@ -38,6 +38,13 @@ $resultado = $mysqli->query($sql_codigo);
                     }               
                 }
             ?>
+            <tr>
+                <td class="add" colspan="4">
+                    <?php
+                        echo '<a type="submit" class="botao_add" href="adicionar.php">Adicionar</a>';
+                    ?>
+                </td>
+            </tr>
         </table>
     </main>
 </body>
