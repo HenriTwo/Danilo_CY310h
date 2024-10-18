@@ -7,6 +7,21 @@
     $resultado = $mysqli->query($sql_codigo);
     $item = $resultado->fetch_assoc();
 
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $id = $_POST['id'];
+        $nome = $_POST['nome'];
+        $quantidade = $_POST['quantidade'];
+
+        $sql_codigo = "UPDATE itens SET nome='$nome' , quantidade='$quantidade' WHERE id='$id'";
+
+        if($mysqli->query($sql_codigo) === TRUE){
+            header('Location: index.php');
+        }
+        else {
+            echo 'Erro ao atualizar a pagina' . $mysqli->error;
+        }
+    }
+
 
 ?>
 
@@ -22,6 +37,7 @@
         Editar Item
     </h1>
     <form action="" method="post">
+        <input type="hidden" name="id" value="<?php echo $id; ?>">
         <label>Nome</label>
         <input type="text" name="nome" value="<?php echo $item['Nome']; ?>" required>
         <label>Quantidade</label>

@@ -33,7 +33,7 @@ $resultado = $mysqli->query($sql_codigo);
                             echo '<td>'.$item['Nome'].'</td>';
                             echo '<td>'.$item['Quantidade'].'</td>';
                             echo '<td><a href="editar.php?id='.$item['Id'].'">editar</a></td>';
-                            echo '<td>deletar</td>';
+                            echo '<td><a href="deletar.php?id='.$item['Id'].'">deletar</a></td>';
                     echo '</tr>';   
                     }               
                 }
