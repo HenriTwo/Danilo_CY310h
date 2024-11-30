@@ -35,9 +35,9 @@
                 <th> Ações </th>
             </tr>
             <?php
-            if (count($infos == 0)){
+            if (count($infos) == 0){
                 echo '<tr>
-                        <td colwspan="4">Nehum registrado</td>
+                        <td colwspan="4">Nenhum registrado</td>
                     </tr>';
             }else {
                 foreach($infos as $item){
@@ -48,7 +48,7 @@
                             <td>'. $id .'</td>
                             <td>'. $nome .'</td>
                             <td>'. $cidade .'</td>
-                            <td><a href="">Editar</a> | <a href="../../db/deletar_fornecedores.php?id='. $id .'">Deletar</a> </td>
+                            <td><a href="formulario_editar.php?id='. $id .'">Editar</a> | <a href="../../db/deletar_fornecedor.php?id='. $id .'">Deletar</a> </td>
                          </tr>';
                 }
             }
