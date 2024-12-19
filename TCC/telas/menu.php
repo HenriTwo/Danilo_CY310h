@@ -30,7 +30,7 @@ $resultado = $mysqli->query($sql_codigo);
                 if ($resultado->num_rows >= 1){
                     While($item = $resultado->fetch_assoc()){
                         echo '<tr class="infos">';
-                            echo '<td><a href="deletar.php?id='.$item['Id'].'">deletar</a></td>';
+                            echo '<td><a href="deletar.php?id='.$item['id'].'">deletar</a></td>';
                     echo '</tr>';   
                     }               
                 }

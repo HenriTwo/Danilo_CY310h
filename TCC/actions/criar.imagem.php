@@ -4,7 +4,7 @@
     session_start();
     $id = $_SESSION['id'];
 
-    $sql_codigo = "INSERT INTO imagem (id_usuario) VALUES  ('$id')";
+    $sql_codigo = "INSERT INTO imagem (id_usuario) VALUES ('$id')";
 
     $resultado = $mysqli->query($sql_codigo);
 

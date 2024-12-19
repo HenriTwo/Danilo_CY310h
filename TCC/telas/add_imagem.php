@@ -1,5 +1,5 @@
 <?php 
-include_once("../conexao/connection.php");
+include_once("../conexao/connect.php");
 
 if(isset($_FILES['imagem'])){
     $sql_codigo = "SELECT id FROM usuario ";
@@ -11,12 +11,11 @@ if(isset($_FILES['imagem'])){
     $extensao = strtolower(pathinfo($nome_imagem,PATHINFO_EXTENSION));
 
     if($extensao != "jpg" &&  $extensao != "png")
-    die("Tipo de arquivo negado");
-    $funcionou = move_uploaded_file($imagem["tmp_name"], $pasta . $nome_imagem . "." . $extensao);
-    if($funcionou){
-        $mysqli="INSERT INTO imagem (id_usuario) VALUES  ('$id')";
+    echo("Tipo de arquivo negado");
+    else $funcionou = move_uploaded_file($imagem["tmp_name"], $pasta . $nome_imagem . "." . $extensao);
+    if($funcionou === TRUE){
+        $mysqli="INSERT INTO imagem (id_usuario) VALUES ('$id')";
         echo'<p>Arquivo enviado, para ver <a href="menu.php">Clique aqui</a></p>';
-
     }
 }
 ?>  
