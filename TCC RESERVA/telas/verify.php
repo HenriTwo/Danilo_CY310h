@@ -3,7 +3,7 @@
 
     $nome = $_POST['pesquisa'];
 
-    $sql_codigo = "SELECT nome, marca, quantidade FROM produtos";
+    $sql_codigo = "SELECT nome, marca, quantidade FROM produtos WHERE '$nome' = nome OR '$nome' = marca ";
 
     $sql_query = $mysqli ->query($sql_codigo);
 

@@ -23,6 +23,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>
@@ -36,7 +37,7 @@
         <label>Quantidade</label>
         <input type="number" name="quantidade" required>
 
-        <input type="submit" value="Salvar">
+        <input type="submit" value="Salvar"> 
     </form>
     <a href="menu.php">Voltar</a>
 </body>

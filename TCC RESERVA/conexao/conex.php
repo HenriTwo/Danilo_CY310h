@@ -28,7 +28,7 @@ if($resultado->num_rows == 0){
     }
 }
 else{
-    echo "Banco de dados já existe! \n";
+    echo "<span class='invisivel'>Banco de dados já existente</span>";
 }
 
 
@@ -66,7 +66,7 @@ foreach($tabelas as $nome => $sql){
             echo "erro ao criar tabela '$nome': " . $mysqli->error . "\n";
         }
     }else{
-        echo "Tabela '$nome' já existe<br>";
+        echo "<span class='invisivel'>Tabela '$nome' já existe</span>";
     }
 
 }
