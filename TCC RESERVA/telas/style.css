@@ -44,7 +44,7 @@ table tr {
     text-align: center;
     justify-content: center;
     font-size: 26px ;
-    background-color: rgb(233, 115, 233);
+    background-color: rgb(230, 53, 191);
     border-radius: 5px;
 }
 
@@ -55,10 +55,23 @@ table tr td {
     
 .btn-add {
     border-radius: 5px;
-    background-color: rgba(160, 33, 192, 0.466);
+    background-color: rgba(204, 0, 255, 0.986);
 }
 
+.dlt-add {
+    border-radius: 5px;
+    background-color: rgba(130, 12, 160, 0.726);
+}
 form input {
     border-radius: 5px;
     border: none;
+}
+
+form label {
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px ;
+    background-color: rgba(78, 23, 124, 0.788);
+    border-radius: 5px;
 }

@@ -30,11 +30,11 @@
         Adicionar Item
     </h1>
     <form action="" method="post">
-        <label>Nome</label>
+        <label class="nome">Nome</label>
         <input type="text" name="nome" required>
-        <label>Marca</label>
+        <label class="marca" >Marca</label>
         <input type="text" name="marca" required>
-        <label>Quantidade</label>
+        <label class="qtd">Quantidade</label>
         <input type="number" name="quantidade" required>
 
         <input type="submit" value="Salvar"> 
